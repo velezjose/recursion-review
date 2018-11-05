@@ -10,17 +10,17 @@ var getElementsByClassName = function(className) {
   
   var checkClassName = function(node) {
 
-    if (node.classList && node.classList.contains(className)){
+    if (node.classList && node.classList.contains(className)) {
       nodes.push(node);
     }
     
     let children = node.childNodes;
 
-    for(let i = 0; i < children.length; i++){
+    for (let i = 0; i < children.length; i++) {
       checkClassName(children[i]);
     }
     
-  }
+  };
 
   checkClassName(document.body);
 
