@@ -21,5 +21,4 @@ describe('parseJSON', function() {
       expect(fn).to.throw(SyntaxError);
     });
   });
-
 });
